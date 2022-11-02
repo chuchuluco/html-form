@@ -8,10 +8,35 @@
     <title>Fake Form</title>
 </head>
 <body>
-    <div>
-        <form action="post">
-            <input type="text">
-        </form>
+    <div class="big-container">
+        <div class="image-container">
+            <div class="logo">
+
+            </div>
+            <img src="michael-baccin-McPP2EgMP0w-unsplash.jpg" alt="bg-image">
+        </div>
+        <div class="description-container">
+            <h2>This is a form</h2>
+            <p>This is the description</p>
+        </div>
+        <div class="form-container">
+            <form action="./users" method="post">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="*********">
+                <label for="pass-confirmation">Confirm password</label>
+                <input type="password" name="pass-confirmation" id="pass-confirmation"
+                placeholder="*********">
+            </form>
+        </div>
+        <div class="form-footer">
+            <input class="create-button" type="button" value="Create Account">
+        </div>
     </div>
 </body>
 </html>
